@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,8 +13,8 @@
       <h1>Bienvenido</h1>
       <p class="subtitle">Accede a tu cuenta para continuar</p>
 
-      <form action="/ingresar/" method="POST" class="login-form">
-        {% csrf_token %}
+      <form action="/" method="POST" class="login-form">
+        
 
         <div class="form-group">
           <label for="email">Correo electrónico</label>
@@ -36,13 +36,13 @@
         </div>
 
         <button type="submit" class="btn-login">Iniciar sesión</button>
-        <a href="/recuperar_contraseña/" class="link">¿Olvidaste tu contraseña?</a>
+        <a href="//" class="link">¿Olvidaste tu contraseña?</a>
       </form>
 
       <hr class="divider">
 
       <p class="registro-text">¿No tienes cuenta?
-        <a href="/crear" class="link">Regístrate aquí</a>
+        <a href="/" class="link">Regístrate aquí</a>
       </p>
     </section>
   </main>
